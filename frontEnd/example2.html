@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	text-align:center;
+}
+#box-back {
+	width:400px;
+	height:50px;
+	margin:auto;
+	padding:10px 50px 50px 50px;
+	border:2px solid powderblue;
+}
+input[type="text"] {
+	background-color:white;
+	color:black;
+	border:1px solid black;
+	font-family:verdana;
+	transition-delay:2s;
+	padding:5px;
+	border-radius:5px;
+}
+input[type="text"]:focus {
+	background-color:white;
+	color:black;
+	border:1px solid black;
+	font-family:verdana;
+	width:50%;
+	transition-delay:2s;
+}
+</style>
+<title>
+Example2
+</title>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Use line break tag. ex- > Hello<br /> WORLD</p>
+<h1>Text with style.</h1>
+<p style="color:blue; font-size:30px; font-family:verdana;">I am Blue.</p>
+<p style="color:red; font-size:30px; font-family:verdana;">I am Red.</p>
+<p style="color:green; font-size:30px; font-family:verdana;">I am Green.</p>
+<h2>Text Formatting.</h2>
+<p style="font-weight:bold;">This text is bold</p>
+<p style="font-style:italic;">This text is italic.</p>
+<p>(a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</p>
+<p><b>BOLD TEXT</b><br />
+<strong>Strong text(important text)</strong><br />
+<i>Italic text</i><br />
+<em>Emphasized text</em><br />
+<mark>Marked text</mark><br />
+<small>Small text</small><br />
+<big>Big text</big><br />
+<del>Deleted Text</del><br />
+<ins>Inserted text</ins><br />
+</p>
+<q>Quotation Line</q>
+<blockquote>Blockquote line</blockquote>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<address>Written by Kshitij Yadav.<br />
+Visit us at: <br />
+Example.com<br />
+Box 564, Wonderland<br />
+Maharashtra
+</address>
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<bdo dir="rtl">This text flow from right to left.</bdo>
+<bdo dir="ltr">This text is opposite of above one.</bdo>
+<h2>Add background color effect.</h2>
+<p style="background-color:dodgerblue; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="background-color:tomato; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="background-color:slateblue; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="background-color:mediumseagreen; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="background-color:gray; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p style="background-color:violet; color:white; font-size:20px; font-family:courier;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<h1>Color effect application<h1>
+<div id="box-back"><p id="colorValue">rgb(255, 255, 255)</p></div>
+<input type="range" id="slideRed" name="slideRed" value="255" max="255" min="0" onchange="changeRGB()" oninput="changeRGB()" />
+<input type="range" id="slideGreen" name="slideGreen" value="255" max="255" min="0" onchange="changeRGB()" oninput="changeRGB()" />
+<input type="range" id="slideBlue" name="slideBlue" value="255" max="255" min="0" onchange="changeRGB()" oninput="changeRGB()" />
+
+<hr />
+<div id="search_with_google_se">
+<form>
+<img style="margin:auto;" src="https://media1.giphy.com/media/R2BtyXJgd2nh6/200.webp?cid=790b76112cdf4c708c6c2959a90b62944860152643eabf2a&rid=200.webp" width="300" height="100" alt="Gif" />
+<br /><label for="search_with_google">Search with Google</label><br />
+<input type="text" id="search" name="search" placeholder="enter your keyword" /><br />
+<input type="submit" value="Search" onclick="findGo()" target="_blank" />
+</form>
+</div>
+<hr />
+<div id="search_with_duckduckgo_se">
+<form>
+<img style="margin:auto;" src="https://media1.giphy.com/media/LY9qkZ74i8Ew0/giphy.webp?cid=790b761180cb902ed61ca373baf03af940a5e2b86f784063&rid=giphy.webp" width="500" height="70" alt="Gif" />
+<br /><label for="search_with_duckduckgo">Search with Duck Duck Go</label><br />
+<input type="text" id="searchDuck" name="searchDuck" placeholder="enter your keyword" /><br />
+<input type="submit" value="Search" onclick="findDuck()" target="_blank" />
+</form>
+</div>
+<script>
+bac = document.getElementById("box-back");
+identity = document.getElementById("colorValue");
+sred = document.getElementById("slideRed");
+sgreen = document.getElementById("slideGreen")
+sblue = document.getElementById("slideBlue")
+function changeRGB() {
+	bac.style.backgroundColor = "rgb(" + sred.value + ", " + sgreen.value + ", " + sblue.value + ")"; 
+	identity.innerHTML = "rgb(" + sred.value + ", " + sgreen.value + ", " + sblue.value + ")"; 
+}
+function findGo() {
+	let stext = document.getElementById("search");
+	window.open("https://www.google.com/search?client=firefox-b-d&q=" + stext.value);
+}
+function findDuck() {
+	let ducktext = document.getElementById("searchDuck");
+	window.open("https://duckduckgo.com/?q=" + ducktext.value +"&t=h_&ia=web");
+}
+</script>
+</body>
+</html>
