@@ -1,0 +1,38 @@
+canvas#imgdraw {
+	border:1px solid blue;
+}
+body {
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+h1.heading {
+	font-family:fantasy;
+	padding:2px;
+	margin:0;
+	color:white;
+}
+div.head {
+	background-color:#dd0000;
+	margin:0px 0px 5px 0px;
+	padding:0;
+	border-bottom:3px solid black;
+	border-top:3px solid green;
+}
+div.foot {
+	background-color:#dd0000;
+	margin:0px;
+	padding:0;
+	border-bottom:3px solid green;
+	border-top:3px solid black;
+}
+p#hello {
+	padding:0px;
+	margin:5px 0px;
+}
+#setHeight:focus, #setWidth:focus {
+	background-color:#ddeedd;
+}
+div.aside {
+	margin:20px 0px;
+}

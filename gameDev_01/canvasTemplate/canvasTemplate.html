@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+canvas template
+</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../canvasTemplate/styles.css" />
+<script src="../canvasTemplate/script.js"></script>
+</head>
+<body>
+<div class="head" id="head">
+<h1 class="heading">Imagipad</h1>
+</div>
+<div class="aside">
+<canvas id="imgdraw" width="400" height="400"></canvas>
+<p id="hello">Hello!</p>
+<button onclick="world()">Rectify it.</button>
+<button onclick="paint()">Paint</button>
+<form>
+<label for="changeSize">Customize size of the canvas...</label>
+<br />
+<input type="number" id="setWidth" name="width" max="900" min="200" value="400" placeholder="width" />
+<input type="number" id="setHeight" name="height" max="600" min="200" value="400" placeholder="height" />
+<input type="button" onclick="metallicEffect()" value="Submit" />
+</form>
+</div>
+<div class="foot">
+<h1 class="heading"><a href="#head">Top</a></h1>
+</div>
+</body>
+</html>
