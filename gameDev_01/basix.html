@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Development- Basix</title>
+</head>
+<style media="screen">
+body {
+	text-align: center;
+	font-family:sans-serif;
+}
+canvas#asteroids {
+	border:1px solid blue;
+}
+</style>
+<body>
+<p>This is an html canvas</p>
+<canvas id="asteroids" width="400" height="400"></canvas>
+<script>
+var pad = document.getElementById("asteroids");
+var cxt = pad.getContext("2d");
+cxt.strokeStyle = "lightgrey";
+cxt.fillStyle = "dimgrey"
+cxt.lineWidth = 5;
+cxt.rect(75,75,250,250);
+cxt.stroke();
+cxt.fill();
+cxt.font = "34px Arial";
+cxt.strokeStyle = "#ff2222";
+cxt.fillStyle = "#ffaaaa";
+cxt.lineWidth = 0.75;
+cxt.textAlign = "center";
+let msg = "2d Drawing";
+cxt.fillText(msg, pad.width / 2, 100);
+cxt.strokeText(msg, pad.width / 2, 100);
+cxt.strokeStyle = "#ffffff";
+cxt.lineWidth = 2;
+cxt.beginPath();
+cxt.arc(200, 140, 20, 0, Math.PI * 2);
+cxt.moveTo(200,160);
+cxt.lineTo(200, 200);
+cxt.moveTo(180, 300);
+cxt.lineTo(185, 260);
+cxt.lineTo(200, 200);
+cxt.lineTo(215, 260);
+cxt.lineTo(220, 300);
+cxt.moveTo(240, 130);
+cxt.lineTo(225, 170);
+cxt.lineTo(200, 170);
+cxt.lineTo(175, 180);
+cxt.lineTo(170, 220);
+cxt.stroke();
+let msg2 = "its quite easy";
+cxt.font = "24px Arial";
+cxt.lineWidth = 0.75;
+cxt.strokeStyle = "#ff0000";
+cxt.fillStyle = "#00ff00";
+cxt.fillText(msg2, pad.width / 2, 320);
+cxt.strokeText(msg2, pad.width / 2, 320);
+</script>
+</body>
+</html>
